@@ -1,1 +1,130 @@
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   
+}
+      
+
+.box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.profile-box{
+    position: relative;
+    padding-right: 1%;
+
+}
+
+
+
+.social-media a i:hover{ opacity: 1; color: orangered;}
+
+.navbar{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #1e1e1e;
+}
+
+.navbar button{
+    border: none;
+    background-color: transparent;
+}
+.navbar a:hover{opacity:  1; color: orangered;}
+
+.dropbtn {
+    color: rgb(0, 0, 0);
+    border: none;
+    background-color: transparent;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 3px 10px;
+    text-decoration: none;
+    display: block;
+
+  }
+
+
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown a button:hover{color: orangered;}
+  
+
+
+/***********/
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .image-gallery {
+    flex: 1 1 calc(33.33% - 10px); /* 3 items per row, with space between */
+    box-sizing: border-box;
+    position: relative;
+
+  }
+  
+  .image-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+  }
+
+  .image-gallery .h3{
+    width: 100%;
+    position: relative;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px 0;
+
+  }
+
+  @media  (min-width: 300px){
+ 
+    
+    .tittle{
+        text-align: center;
+    }
+    .tittle button{
+        font-size: 1rem;
+    }
+    .dropbtn{
+        font-size: 0.9rem;
+    }
+   
+    .dropdown .dropdown-content a{
+        font-size: 0.6rem;
+
+    }
+
+    .gallery-container .image-gallery .h3{
+        font-size: 0.8rem;
+    }
+}
+
+
 
