@@ -143,9 +143,32 @@ html body{
         font-size: 0.3rem; /* Adjust as needed */
     }  
 
+    .caption{
+        width: 100%;
+        height: auto;
+       text-align: center;
+       padding: 60px 0;
+        
+     }
+     
+     .caption-box{
+         
+         font-size: 0.6rem;
+     }
+     
+     .caption a {
+        color: #61a7f8; /* Default text color */
+        text-decoration: none; /* Removes underline */
+        transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+    }
+    
+    .caption a:hover {
+        color: rgb(224, 214, 214); /* Change text color on hover */
+        text-decoration: underline; /* Add underline on hover */
+    }
+     
 
-
-.gallery-box {
+    .gallery-box {
         display: flex;
         flex-wrap: wrap;
         gap: 16px;
@@ -183,7 +206,7 @@ html body{
 
 .network-box{
     width: 100%;
-    font-size: 0.5em;
+    font-size: 1em;
 }
 .network-box .network-box-items a img{
     width: 5%;
@@ -192,16 +215,14 @@ html body{
 
 .contact-box{
     width: 100%;
-    font-size: 0.5em;
+    font-size: 1em;
 }
 .copyright{
     width: 100%;
-    font-size: 0.5em;
+    font-size: 1em;
     text-align: center;
-    border-top: 0.1px solid #111111;
 }
 }
-
 
 /*****************************************/
     
@@ -312,66 +333,89 @@ html body{
     
     .nav-item .dropdown-menu li a {
         font-size: 0.7em; /* Adjust as needed */
-    }   
+    } 
+    
+    .caption{
+        width: 100%;
+        height: auto;
+       text-align: center;
+       padding: 60px 0;
+        
+     }
+     
+     .caption-box{
+         
+         font-size: 1.3rem;
+     }
+     
+     .caption a {
+        color: #61a7f8; /* Default text color */
+        text-decoration: none; /* Removes underline */
+        transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+    }
+    
+    .caption a:hover {
+        color: rgb(224, 214, 214); /* Change text color on hover */
+        text-decoration: underline; /* Add underline on hover */
+    }
+     
     .gallery-box {
         display: flex;
         flex-wrap: wrap;
         gap: 16px;
         padding: 16px;
         justify-content: center;
-        
     }
     
     .image-gallery {
-        flex: 1 1 calc(33.333% - 16px); /* Each item takes roughly 33% of the available width minus the gap */
-        max-width: 100%; /* Set a maximum width to avoid overly large images */
-        box-sizing: border-box;
-        height: auto;
-       
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center images */
+        gap: 16px; /* Space between images */
+        width: 100%; /* Make sure it spans full width */
     }
     
     .image-gallery img {
-        width: 100%; /* Makes the image responsive */
-        height: auto; /* Ensures aspect ratio is maintained */
-        border-radius: 6px; /* Optional: gives rounded corners */
-        display: block; /* Removes any extra space below images */
-        margin-bottom: 16px; /* Adds space between images */
+        flex: 1 1 calc(33.33% - 16px); /* Each image takes 50% width minus gap */
+        max-width: calc(33.33% - 16px); /* Ensures images fit within 50% width */
+        height: auto;
+        border-radius: 3px; /* Optional rounded corners */
+        display: block; /* Removes unwanted space below images */
     }
     
-.footer{
-    width: 100%;
-    height: auto;
-    border-top: 0.1px solid #111111;
-}
-
-.footer-items{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
-
-.network-box{
-    width: 100%;
-    font-size: 1em;
-}
-.network-box .network-box-items a img{
-    width: 5%;
-    height: auto;
-}
-
-.contact-box{
-    width: 100%;
-    font-size: 1em;
-}
-.copyright{
-    width: 100%;
-    font-size: 1em;
-    border-top: 0.1px solid #111111;
-    text-align: center;
-}
+    .footer{
+        width: 100%;
+        height: auto;
+        border-top: 0.1px solid #111111;
+    }
     
-}
+    .footer-items{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    
+    .network-box{
+        width: 100%;
+        font-size: 1em;
+    }
+    .network-box .network-box-items a img{
+        width: 5%;
+        height: auto;
+    }
+    
+    .contact-box{
+        width: 100%;
+        font-size: 1em;
+    }
+    .copyright{
+        width: 100%;
+        font-size: 1em;
+        text-align: center;
+    }
+    }
+    
 
 /*****************************************/
 
