@@ -146,29 +146,28 @@ html body{
 
 
 .gallery-box {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    padding: 16px;
-    justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 16px;
+        justify-content: center;
+    }
     
-}
-
-.image-gallery {
-    flex: 1 1 calc(33.333% - 16px); /* Each item takes roughly 33% of the available width minus the gap */
-    max-width: 100%; /* Set a maximum width to avoid overly large images */
-    box-sizing: border-box;
-    height: auto;
-   
-}
-
-.image-gallery img {
-    width: 100%; /* Makes the image responsive */
-    height: auto; /* Ensures aspect ratio is maintained */
-    border-radius: 3px; /* Optional: gives rounded corners */
-    display: block; /* Removes any extra space below images */
-    margin-bottom: 16px; /* Adds space between images */
-}
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center images */
+        gap: 16px; /* Space between images */
+        width: 100%; /* Make sure it spans full width */
+    }
+    
+    .image-gallery img {
+        flex: 1 1 calc(50% - 16px); /* Each image takes 50% width minus gap */
+        max-width: calc(50% - 16px); /* Ensures images fit within 50% width */
+        height: auto;
+        border-radius: 3px; /* Optional rounded corners */
+        display: block; /* Removes unwanted space below images */
+    }
 .footer{
     width: 100%;
     height: auto;
